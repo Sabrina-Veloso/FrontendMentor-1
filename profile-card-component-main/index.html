@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.google.com/specimen/Kumbh+Sans" rel="stylesheet">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background-color: cyan;
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 18px;
+        }
+        
+        #bola {
+            width: 750px;
+            height: 660px;
+            transform: translate(-30%, -30%);
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        #bola2 {
+            width: 750px;
+            height: 660px;
+            transform: translate(-30%, -30%);
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            top: 400px;
+            left: 80%;
+            right: 300px;
+        }
+        
+        #cartao {
+            position: absolute;
+            top: 135px;
+            left: 550px;
+            background-color: white;
+            width: 370px;
+            height: 400px;
+            align-items: center;
+            border-radius: 10px;
+        }
+        
+        #fundo {
+            z-index: -1;
+            width: 370px;
+            height: 150px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        #foto {
+            border: 8px solid white;
+            top: 95px;
+            left: 140px;
+            right: 140px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        #escrita {
+            position: absolute;
+            top: 200px;
+            left: 120px;
+            right: 120px;
+        }
+        
+        #linha-horizontal {
+            position: absolute;
+            top: 300px;
+            width: 370px;
+            border: 1px solid rgb(202, 202, 202);
+        }
+        
+        #escrita2 {
+            position: absolute;
+            top: 305px;
+            left: 100px;
+        }
+        
+        #linha {
+            position: absolute;
+            top: 340px;
+            left: 60px;
+            color: rgb(170, 170, 170);
+        }
+        
+        #linha2 {
+            position: absolute;
+            top: 40px;
+            left: 35px;
+            color: rgb(170, 170, 170);
+        }
+        
+        #idade {
+            position: absolute;
+            top: 2px;
+            left: 120px;
+            right: 120px;
+            color: rgb(170, 170, 170);
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bola" src="/profile-card-component-main/images/bg-pattern-top.svg">
+
+
+    <div id="cartao">
+        <img id="fundo" src="/profile-card-component-main/images/bg-pattern-card.svg">
+        <img id="foto" src="/profile-card-component-main/images/image-victor.jpg">
+        <div id="escrita">
+            <p> <strong> Victor Crest</strong>
+                <p id="idade">26</p>
+            </p>
+            <p id="linha2">London</p>
+        </div>
+
+        <div id="linha-horizontal"></div>
+
+        <div>
+            <p id="escrita2"><strong>80k &emsp; 803K  &emsp;  1.4K</strong> </p>
+            <p id="linha">Followers &emsp; Likes &emsp; Photos</p>
+        </div>
+
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Sabrina Veloso</a>.
+        <img id="bola2" src="/profile-card-component-main/images/bg-pattern-top.svg">
+    </div>
+</body>
+
+</html>
